@@ -11,3 +11,22 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# default MAKEFLAGS
+export MAKEFLAGS="-j 4"
+
+# golang
+export GOPATH=$HOME/.gopath
+
+# aliases
+alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source virtualenvwrapper_lazy.sh
+
+# Z
+. `brew --prefix`/etc/profile.d/z.sh
+
+#source ~/.proxy
