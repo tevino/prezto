@@ -30,4 +30,4 @@ source virtualenvwrapper_lazy.sh
 . `brew --prefix`/etc/profile.d/z.sh
 
 #source ~/.proxy
-alias upgrade_prezto="pushd ${ZDOTDIR:-$HOME}/.zprezto && git pull --rebase && git submodule update --init --recursive && popd"
+alias upgrade_prezto="pushd ${ZDOTDIR:-$HOME}/.zprezto && git pull upstream master && git submodule update --init --recursive && popd"
